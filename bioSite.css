@@ -1,13 +1,13 @@
-.logo {
-    text-align: center;
-    width: auto;
+.logo img {
+    width: 350px;
     height: auto;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
 }
 
 body {
-    background-color: #03258c;
-    margin: 0;
+    background-color: black;
     font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
 
@@ -15,22 +15,33 @@ header {
     background-color: white;
     color: #0D0D0D;
     text-align: center;
-    border-bottom: 15px solid #F2B705;
+    border-bottom: 10px solid #F2B705;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 h1 {
     font-weight: 400;
+    font-size: 24pt;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16pt;
 }
 
 #navbar {
     overflow: hidden;
-    background-color: white;
+    background-color: #03258C;
+    font-size: 16pt;
 }
 
 #navbar a {
     float: right;
     display: block;
-    color:#0D0D0D;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,7 +53,7 @@ h1 {
 }
 
 #container1 {
-    margin-top: 2%;
+    margin-top: 20%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;
@@ -51,10 +62,10 @@ h1 {
 }
 
 #container2 {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
+    margin: 20% 5%;
+    padding: auto;
+    text-align: center;
+    align-content: center;
 }
 
 .main-section {
@@ -66,18 +77,66 @@ h1 {
     float: left;
     margin: 0 auto;
     padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 5%;
+    background-color: #686A6C;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.biography {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: black;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-section img {
+    width: 800px;
+    height: auto;
+}
+
+.self-portrait img {
+    width: 400px;
+    height: auto;
+}
+
+
+.main-section h1 {
+    padding-top: 20%;
 }
 
 .Brief_Intro {
-    padding-top: 100px;
+    padding-top: 50%;
 }
 
+.bio {
+    padding-top: 0;
+}
 
 .image-gallery {
-    margin-top: 10%;
+    width: 100%;
+    margin: 10%;
+    padding: auto;
     display: grid;
     grid-template-columns: auto auto auto;
-    place-items: center;
+    grid-area: auto;
 }
 
 #page-title {
@@ -87,9 +146,13 @@ h1 {
     margin: 40px 0px 20px 0px;
 }
 
-img {
-    width: 400px;
-    height: 350px;
+figure img {
+    width: 300px;
+    height: auto;
+    display: grid;
+    margin: auto;
+    padding: 55px;
+    border-radius: 10%;
 }
 
 .gallery-title {
@@ -116,7 +179,8 @@ h1, h2, h3, p, figcaption {
 .gallery-item {
     padding: 5px;
     float: left;
-
+    display: flex;
+    place-items: center;
 }
 
 footer {
@@ -124,20 +188,21 @@ footer {
     position: pushed;
     bottom: 0;
     width: 100%;
+    position: running (footer);
 }
 
 footer p {
-    color: #FFF;
+    color: white;
     font-weight: 400;
     float: right;
     padding-right: 10px;
     font-style: italic;
-    font-size: .75em;
+    font-size: small
 }
 
 footer a {
     text-decoration: none;
-    color: #FFF;
+    color: white;
 }
 
 footer a:hover {
